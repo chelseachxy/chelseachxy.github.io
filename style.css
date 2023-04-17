@@ -10,6 +10,7 @@
     line-height: 1.5;
     color: #333;
     background-color: #fff;
+    font-weight: normal;
   }
   
   a {
@@ -27,7 +28,7 @@
     text-align: center;
     color: #000000;
     padding: 20px;
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
   }
@@ -51,14 +52,13 @@
     color: #fff;
   }
   
-  main {
-    margin-top: 20px;
-  }
   
   footer {
-    background-color: #333;
-    color: #fff;
+    color: #000000;
     padding: 20px;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    font-size: 12px;
   }
   
