@@ -2,14 +2,14 @@
     margin: 12;
     padding: 0;
     box-sizing: border-box;
+    background-color: #EFF6EE;
   }
   
   body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     line-height: 1.5;
-    color: #333;
-    background-color: #fff;
+    color: #273043
     font-weight: normal;
   }
   
@@ -26,7 +26,7 @@
   
   header {
     text-align: center;
-    color: #000000;
+    color: #273043;
     padding: 20px;
     font-size: 60px;
     font-family: 'Courier New', Courier, monospace;
@@ -54,7 +54,7 @@
   
   
   footer {
-    color: #000000;
+    color: #9197AE;
     padding: 20px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
