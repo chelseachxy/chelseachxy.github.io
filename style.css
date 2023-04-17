@@ -5,7 +5,7 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     line-height: 1.5;
     color: #333;
@@ -24,9 +24,11 @@
   }
   
   header {
-    background-color: #333;
+    text-align: center;
     color: #fff;
     padding: 20px;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   nav {
