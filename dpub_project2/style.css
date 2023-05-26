@@ -1,8 +1,10 @@
 body{
-    background-color: black;
+    background: radial-gradient(circle, #272A73, #A11692);
     margin:0px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "mycustomfont";
     color: rgb(255, 255, 255);
+    height: 1100px;
+    margin-bottom: 48px;
 }
 
 div{
@@ -11,15 +13,34 @@ div{
 
 img{
     width: 100%;
-    height: 100%;
+    display: block;
+}
+
+div.objectcontain img {
+    object-fit: contain;
+}
+
+@font-face {
+    font-family:"mycustomfont";
+    src: url("Gobbble-BretzLining.otf") format("OpenType");
+}
+
+@font-face {
+    font-family: "footerfont";
+    src: url("Gobbble-Brischke.otf");
+}
+
+@font-face {
+    font-family: "titlefont";
+    src: url("TheNightWatch.ttf");
 }
 
 div.intro{
-    margin-top: 200px;
+    margin-top: 195px;
 }
 
 div.outro{
-    margin-bottom: 48px;
+    margin-bottom: 80px;
 }
 
 div.menu{
@@ -27,6 +48,7 @@ div.menu{
     top: 0px;
     left: 0px;
     width: 100%;
+    font-family: "titlefont";
 }
 
 div.footer{
@@ -34,17 +56,16 @@ div.footer{
     bottom: 0px;
     background-color: rgb(17, 157, 164);
     width: 100%;
+    font-family: "footerfont";
+}
+
+div.box{
+    width: 75%;
 }
 
 div.row{
     flex-wrap:wrap;
     display: flex;
-    outline: 1px solid white;
-}
-
-div.col{
-    outline:1px solid white;
-    height: 800px;
 }
 
 div.height70{
@@ -83,6 +104,10 @@ div.weight {
     font-weight: bold;
 }
 
+div.font200{
+    font-size: 200px;
+}
+
 div.font100{
     font-size: 100px;
 }
@@ -103,6 +128,26 @@ div.padding20{
     padding: 20px;
 }
 
+div.margintop12{
+    margin-top: 12%;
+}
+
+div.margintop10{
+    margin-top: 10%;
+}
+
+div.margintop8{
+    margin-top: 8%;
+}
+
+div.margintop5{
+    margin-top: 5%;
+}
+
+div.marginleft{
+    margin-left: 10%;
+}
+
 div.texttopleft{
     text-align: top left;
     padding: 10px;
@@ -114,6 +159,10 @@ div.textcenter{
 
 div.radical{
     background: radial-gradient(circle, #272A73, #A11692);
+}
+
+div.gradient{
+    background: linear-gradient(45deg, #272A73, #A11692);
 }
 
 div.sky{
@@ -144,4 +193,30 @@ div.mountain{
 
 div.mountain:hover{
     background-image: url(mountain.jpg);
+}
+
+div.up{
+    position:fixed;
+    top:0;
+    bottom: 0;
+    height: 100%;
+    z-index: 10;
+}
+
+div.bottom{
+    position:fixed;
+    width: 100%;
+    bottom: 75px;
+    height: 10%;
+    z-index: 10;
+    transition:1s;
+    box-shadow:1px -1px 35px rgb(53, 6, 53);
+}
+
+div.bottom:hover{
+    position: fixed;
+    bottom: 48px;
+    z-index:20;
+    height:90%;
+    transition:1s;
 }
