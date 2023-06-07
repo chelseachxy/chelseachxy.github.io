@@ -39,16 +39,14 @@ div.intro{
     margin-top: 195px;
 }
 
-div.outro{
-    margin-bottom: 80px;
-}
-
 div.menu{
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
     font-family: "titlefont";
+    pointer-events: none;
+    z-index: 10;
 }
 
 div.footer{
@@ -57,6 +55,7 @@ div.footer{
     background-color: rgb(17, 157, 164);
     width: 100%;
     font-family: "footerfont";
+    z-index: 20;
 }
 
 div.box{
@@ -100,8 +99,12 @@ div.width50{
     width:50%;
 }
 
-div.weight {
-    font-weight: bold;
+div.width33{
+    width: 33.33%;
+}
+
+div.font250{
+    font-size: 250px;
 }
 
 div.font200{
@@ -151,6 +154,7 @@ div.marginleft{
 div.texttopleft{
     text-align: top left;
     padding: 10px;
+    padding-left: 15px;
 }
 
 div.textcenter{
@@ -174,6 +178,24 @@ div.sky{
 div.sky:hover{
     background-image: url(sky.jpg);
 }
+
+div.trigger1{
+    cursor: pointer;
+}
+
+div.skyinfo{
+    opacity: 0;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    z-index: 25;
+    width: 350px;
+    height: 350px;
+}
+
+div.skyinfo.show{
+    opacity: 1;
+}
     
 div.ocean{
     background-image:url(ocean1.jpg);
@@ -183,6 +205,24 @@ div.ocean{
 
 div.ocean:hover{
     background-image: url(ocean.jpg);
+}
+
+div.trigger2{
+    cursor: pointer;
+}
+
+div.oceaninfo{
+    opacity: 0;
+    position: fixed;
+    top: 300px;
+    right: 550px;
+    z-index: 25;
+    width: 350px;
+    height: 350px;
+}
+
+div.oceaninfo.show{
+    opacity: 1;
 }
 
 div.mountain{
@@ -195,28 +235,126 @@ div.mountain:hover{
     background-image: url(mountain.jpg);
 }
 
-div.up{
-    position:fixed;
-    top:0;
-    bottom: 0;
-    height: 100%;
-    z-index: 10;
+div.trigger3{
+    cursor: pointer;
 }
 
-div.bottom{
+div.moutaininfo{
+    opacity: 0;
+    position: fixed;
+    bottom: 100px;
+    left: 80px;
+    z-index: 25;
+    width: 350px;
+    height: 350px;
+}
+
+div.moutaininfo.show{
+    opacity: 1;
+}
+
+div.bottom1{
     position:fixed;
-    width: 100%;
-    bottom: 75px;
-    height: 10%;
+    width: 35%;
+    bottom: 45px;
+    right: 0px;
+    height: 20%;
     z-index: 10;
     transition:1s;
     box-shadow:1px -1px 35px rgb(53, 6, 53);
+    border-radius: 40px 0px 0px 0px;
 }
 
-div.bottom:hover{
-    position: fixed;
-    bottom: 48px;
-    z-index:20;
-    height:90%;
+div.bottom1:hover{
+    height:80%;
     transition:1s;
+}
+
+div.bottom2{
+    position:fixed;
+    width: 35%;
+    bottom: 45px;
+    right: 33.333%;
+    height: 15%;
+    z-index: 12;
+    transition:1s;
+    box-shadow:1px -1px 35px rgb(53, 6, 53);
+    border-radius: 22px 22px 0px 0px;
+}
+
+div.bottom2:hover{
+    height:80%;
+    transition:1s;
+}
+
+div.bottom3{
+    position:fixed;
+    width: 35%;
+    left: 0px;
+    bottom: 45px;
+    height: 10%;
+    z-index: 15;
+    transition:1s;
+    box-shadow:1px -1px 35px rgb(53, 6, 53);
+    border-radius: 0px 40px 0px 0px;
+}
+
+div.bottom3:hover{
+    height:80%;
+    transition:1s;
+}
+
+div.banner {
+    width:100%;
+    height:81vh;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.banneritem {
+    width: 50%;
+    height:50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+div.bg1 {
+    background-image: url(element1.png);
+}
+
+div.bg1:hover {
+    transform: rotate(360deg);
+    transition: 10s;
+}
+
+div.bg2 {
+    background-image: url(element2.png);
+}
+
+div.bg2:hover {
+    transform: rotate(360deg);
+    transition: 10s;
+}
+
+div.bg3 {
+    background-image: url(element3.png);
+}
+
+div.bg3:hover {
+    transform: rotate(360deg);
+    transition: 10s;
+}
+
+div.bg4 {
+    background-image: url(element4.png);
+}
+
+div.bg4:hover {
+    transform: rotate(360deg);
+    transition: 10s;
 }

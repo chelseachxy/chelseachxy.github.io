@@ -6,11 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+$(document).ready(function () {
+  $("div.trigger1").click(function () {
+    $("div.skyinfo").addClass("show");
+    $("div.skyinfo").click(function () {
+      $(this).removeClass("show");
+    });
+  });
+  $("div.trigger2").click(function () {
+    $("div.oceaninfo").addClass("show");
+    $("div.oceaninfo").click(function () {
+      $(this).removeClass("show");
+    });
+  });
+  $("div.trigger3").click(function () {
+    $("div.moutaininfo").addClass("show");
+    $("div.moutaininfo").click(function () {
+      $(this).removeClass("show");
+    });
+  });
+});
+      </script>
 </head>
 <body>
-   <div class="menu height25 font200 textcenter">Beyond Horizons</div>
+    <div class="skyinfo">
+        <img src="skyhaven.png" alt="">
+    </div>
+    <div class="oceaninfo">
+        <img src="aqua.png" alt="">
+    </div>
+    <div class="moutaininfo">
+        <img src="zenith.png" alt="">
+    </div>
    
-   <div class="row intro up">
+   <div class="menu height25 font250 textcenter">Beyond Horizons</div>
+   
+   <!-- <div class="row intro up">
         <div class="col width50 padding20">
             <div class="box margintop10">
                 <img src="element1.png" alt="">
@@ -27,13 +60,19 @@
                 <img src="element4.png" alt="">
             </div>
         </div>
+   </div> -->
+
+   <div class="banner">
+    <div class="banneritem bg1"></div>
+    <div class="banneritem bg2"></div>
+    <div class="banneritem bg3"></div>
+    <div class="banneritem bg4"></div>
    </div>
 
-   <div class="row height70 bottom">
-    <div class="col sky width50 texttopleft font30">Altitude</div>
-    <div class="col width50">
-        <div class="ocean height50 texttopleft font30">Waves</div>
-        <div class="mountain height50 texttopleft font30">Peaks</div>
+   <div class="row">
+    <div class="col sky texttopleft font30 trigger1 bottom1">Skyhaven</div>
+    <div class="col ocean texttopleft font30 trigger2 bottom2">Aquanautica</div>
+    <div class="col mountain texttopleft font30 trigger3 bottom3">Zenith</div>
     </div>
    </div>
 
